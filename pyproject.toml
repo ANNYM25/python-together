@@ -1,0 +1,10 @@
+[project]
+name = "python-together"
+version = "0.1.0"
+description = "Shared Python, math, ML, and fintech lab"
+requires-python = ">=3.11"
+readme = "README.md"
+
+[tool.pytest.ini_options]
+testpaths = ["05-algorithms/tests"]
+addopts = "-q"
