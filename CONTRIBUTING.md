@@ -4,10 +4,13 @@ This lab has two first-class authors. Treat every lesson as something the other 
 
 ## Before you push
 
-1. Run the lesson you touched: `python path/to/lesson.py`
-2. If you changed algorithms or math helpers, run `pytest 05-algorithms/tests`
-3. Keep examples small enough to read on a laptop screen
-4. Put exercises in a `YOUR TURN` block, not as hidden homework in another file
+1. Edit the lesson **notebook** (`.ipynb`) directly in Jupyter or Colab.
+2. **Run it top to bottom** — every cell must execute with no error. (`make validate`
+   runs the whole repo; it's our test suite.)
+3. Lessons that implement something (algorithms, from-scratch ML) should include a
+   `✔️ Quick check` cell with `assert`s so correctness is verified on every run.
+4. Keep examples small enough to read on a laptop screen.
+5. Put exercises in a `🏋️ Your turn` cell, not as hidden homework in another file.
 
 ## How we split work
 
@@ -21,28 +24,20 @@ Use this as a default, then ignore it when a lesson needs both brains:
 
 When you open a pull request, name the other person as reviewer if the lesson crosses tracks (example: a credit model uses both sklearn and a PD/LGD story).
 
-## Lesson template
+## Lesson shape
 
-```python
-"""Short title.
+Lessons are **flat, top-to-bottom** notebooks. No `def demo()` wrappers — a
+beginner reads and runs the code directly. The cell order is always:
 
-Why this exists: one sentence.
-Run: python this_file.py
-"""
+1. **Title + why** (markdown) — one or two sentences, ideally an ML or finance hook.
+2. **Concept → code** (markdown, then a short flat code cell) — repeat a few times.
+3. **`🏋️ Your turn`** (markdown + a starter code cell with blanks).
+4. **`✅ What you learned`** (markdown recap) + a pointer to the next lesson.
 
-def demo() -> None:
-    print("worked example")
-
-
-def your_turn() -> None:
-    # TODO: replace this with the exercise
-    pass
-
-
-if __name__ == "__main__":
-    demo()
-    your_turn()
-```
+Keep the first cell an "Open in Colab" badge so learners can launch it in one
+click. (`tools/build_notebooks.py` can regenerate a notebook from a percent-format
+`.py` if you prefer authoring that way, but it's optional — the `.ipynb` is the
+source of truth.)
 
 ## Commit messages
 
@@ -52,10 +47,11 @@ Write why, not a file list.
 - `add ESG scorecard using dummy holdings`
 - `fix binary search off-by-one on empty list`
 
-## Adding Annie (or you) on GitHub later
+## Adding Annie (or you) on GitHub
 
-1. Create an empty GitHub repository
-2. Add the other person as a collaborator
-3. Both clone, both push to `main` through short-lived branches
+See **[docs/github-for-two-people.md](docs/github-for-two-people.md)** for the full
+walkthrough (organization vs. collaborator, how credit works, first push). Short
+version: use a GitHub **Organization** so neither of you "owns" it, set your git
+identity so your commits count, and push through short-lived branches.
 
 Do not commit API keys, brokerage logins, or real client data. Fintech examples in this lab use synthetic numbers only.

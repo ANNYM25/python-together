@@ -1,0 +1,34 @@
+# CodeRabbit config — AI code review on every pull request.
+# Enable it once (free for public repos): https://coderabbit.ai -> sign in with
+# GitHub -> add the organization/repo. No other setup needed; this file tunes it.
+# Docs: https://docs.coderabbit.ai/reference/yaml-template
+language: en-US
+early_access: false
+
+reviews:
+  profile: chill            # this is a learning repo, not a production service
+  request_changes_workflow: false
+  high_level_summary: true
+  poem: false
+  review_status: true
+  collapse_walkthrough: false
+
+  # Teach-the-author tone: explain *why*, suggest, don't gatekeep. Lessons live in
+  # .ipynb notebooks; CodeRabbit understands notebook diffs.
+  path_instructions:
+    - path: "**/*.ipynb"
+      instructions: >
+        These are teaching notebooks for beginners: markdown explanation cells
+        alternating with runnable code cells. Favor clarity over cleverness. Flag
+        code a beginner would find confusing, premature abstractions (e.g.
+        wrapping an intro lesson in functions/classes before they're taught),
+        explanations that are wrong or missing, and cells that won't run top to
+        bottom. Do NOT demand production patterns (logging, exhaustive error
+        handling, typing) in intro lessons. Check that each lesson ends with a
+        "Your turn" exercise cell and a short "What you learned" recap.
+    - path: "tools/**"
+      instructions: >
+        Build/utility scripts. Normal review standards apply here.
+
+chat:
+  auto_reply: true

@@ -1,6 +1,15 @@
 # Python Together
 
-A shared lab for **Python, mathematics, machine learning, and fintech**.
+[![notebooks](https://github.com/R341CUL/python-together/actions/workflows/notebooks.yml/badge.svg)](https://github.com/R341CUL/python-together/actions/workflows/notebooks.yml)
+[![Python 3.11+](https://img.shields.io/badge/python-3.11%2B-blue.svg)](https://www.python.org)
+[![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+
+A shared lab for **Python, mathematics, machine learning, and fintech** — taught as
+**runnable notebooks** you can open in one click.
+
+> Every lesson is a notebook: read the explanation, run the code cell under it,
+> then do the `🏋️ Your turn`. Open any lesson in **Google Colab** (nothing to
+> install) or run it locally in **Jupyter**.
 
 This repository is built for two people who will both commit:
 
@@ -34,38 +43,42 @@ Suggested split of ownership (not a wall — both of you can edit anything):
 
 Keep a living log in `progress/PROGRESS.md`.
 
-## Setup
+## Two ways to run a lesson
 
-You need **Python 3.11+**.
+**1. Google Colab — zero install (best for starting out).**
+Open any `.ipynb` on GitHub and click its **Open in Colab** badge. Full guide:
+[docs/setup-colab.md](docs/setup-colab.md).
+
+**2. Locally with Jupyter.**
 
 ```bash
 python3 -m venv .venv
-source .venv/bin/activate   # Windows: .venv\Scripts\activate
+source .venv/bin/activate          # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
-python 01-python-foundations/01_hello_and_types.py
+jupyter lab                        # then open any lesson .ipynb
 ```
 
-Optional: Jupyter for the data and ML tracks.
+Full local guide (and how to author/edit lessons):
+[docs/setup-jupyter.md](docs/setup-jupyter.md).
 
-```bash
-jupyter lab
-```
+## How a lesson is built
 
-## Lesson style
+Every lesson **is** a Jupyter notebook (`.ipynb`) — open it in Colab or Jupyter,
+read the explanation, run the code cell under it. Inside every lesson you'll
+find, in order:
 
-Every `.py` file is a lesson you can run:
+1. A short **why this matters** (usually an ML or finance hook)
+2. Plain, **flat** worked code — read top to bottom, no scaffolding to decode
+3. A **`🏋️ Your turn`** cell — edit it and run it
 
-```bash
-python 06-mathematics/02_calculus.py
-```
+Do not skip the `🏋️ Your turn` cells. That is where the learning happens.
 
-Inside each file you will see:
+## Working on this together
 
-1. A short "why this exists"
-2. Worked examples that print
-3. A `YOUR TURN` section at the bottom
-
-Do not skip the `YOUR TURN` blocks. That is where the learning happens.
+Two authors, both committing. See
+**[docs/github-for-two-people.md](docs/github-for-two-people.md)** for how to set
+it up as a GitHub organization so you both own it equally, and how commit credit
+works. Contribution rules live in [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## What this is not
 

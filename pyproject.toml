@@ -5,6 +5,10 @@ description = "Shared Python, math, ML, and fintech lab"
 requires-python = ">=3.11"
 readme = "README.md"
 
-[tool.pytest.ini_options]
-testpaths = ["05-algorithms/tests"]
-addopts = "-q"
+# Lessons are notebooks. Each one self-verifies with inline `assert` checks, and
+# CI executes every notebook, so a wrong implementation fails the build. The
+# jupytext block below is only for the optional authoring workflow in tools/.
+[tool.jupytext]
+formats = "py:percent,ipynb"
+notebook_metadata_filter = "-all"
+cell_metadata_filter = "-all"

@@ -1,0 +1,30 @@
+name: notebooks
+
+# Executes every lesson notebook top to bottom to catch a broken lesson before a
+# learner does. Notebooks are the source of truth in this repo.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  execute:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          pip install nbconvert ipykernel
+
+      - name: Execute every notebook (smoke test)
+        run: |
+          find . -name '*.ipynb' -not -path './.venv/*' -print0 \
+            | xargs -0 -I{} jupyter nbconvert --to notebook --execute --stdout "{}" > /dev/null

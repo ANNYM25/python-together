@@ -1,17 +1,18 @@
 # Python foundations
 
-Start here if you are new, or if you want a shared vocabulary before ML and fintech.
+The beginner on-ramp. Open a notebook, run the first cell, read what printed,
+change a value, run it again. No prior Python needed. Open each `.ipynb` in
+**Colab** (click its badge) or **Jupyter**.
 
-| File | Topic |
-| --- | --- |
-| `01_hello_and_types.py` | Running Python, `print`, `type` |
-| `02_operators.py` | Arithmetic and comparisons |
-| `03_strings.py` | Text, f-strings, slicing |
-| `04_lists.py` | Ordered, mutable sequences |
-| `05_tuples_and_sets.py` | Immutable sequences and unique items |
-| `06_dictionaries.py` | Key-value records |
-| `07_conditionals.py` | `if` / `elif` / `else` |
-| `08_loops.py` | `for`, `while`, `range` |
-| `exercises.py` | Mixed practice |
+| Lesson | Notebook | You learn |
+| --- | --- | --- |
+| 1 | `01_hello_and_types.ipynb` | printing, values, types, variables |
+| 2 | `02_operators.ipynb` | arithmetic, comparisons, logic |
+| 3 | `03_strings.ipynb` | text, f-strings, slicing |
+| 4 | `04_lists.ipynb` | ordered collections |
+| 5 | `05_tuples_and_sets.ipynb` | fixed records and unique sets |
+| 6 | `06_dictionaries.ipynb` | key → value data |
+| 7 | `07_conditionals.ipynb` | making decisions with `if` |
+| 8 | `08_loops.ipynb` | doing something to every item |
 
-Run in order. Then do `exercises.py`.
+Don't skip the `🏋️ Your turn` cell at the end of each lesson.

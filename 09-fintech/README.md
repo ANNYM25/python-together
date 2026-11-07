@@ -2,10 +2,10 @@
 
 Annie's home track. Every number here is synthetic. No live market data, no client books.
 
-| File | Topic |
+| Notebook | Topic |
 | --- | --- |
-| `01_money_math.py` | Time value of money |
-| `02_returns_and_risk.py` | Simple/log returns, vol, drawdown |
-| `03_portfolio.py` | Weights, diversification, a tiny efficient frontier |
-| `04_esg_and_sustainable_finance.py` | Scores, exclusions, a green-bond style cashflow |
-| `05_credit_and_fintech_data.py` | PD-style labels and a simple scorecard idea |
+| `01_money_math.ipynb` | Time value of money: PV, NPV, IRR |
+| `02_returns_and_risk.ipynb` | Simple/log returns, vol, drawdown, VaR |
+| `03_portfolio.ipynb` | Weights, covariance, the risk/return trade-off |
+| `04_esg_and_sustainable_finance.ipynb` | ESG scores, screens, a green-bond cashflow |
+| `05_credit_and_fintech_data.ipynb` | Credit scoring as ML (AUC, thresholds) |

@@ -16,7 +16,7 @@ Books worth buying later:
 
 Practice:
 
-- Short drills: the `YOUR TURN` blocks in this repo
+- Short drills: the `🏋️ Your turn` cells in this repo
 - Harder drills: Exercism Python track, then Kaggle Playground
 
 The public repos that shaped the **topic list** (not the wording) are linked from the top-level README.

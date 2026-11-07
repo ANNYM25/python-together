@@ -1,0 +1,5 @@
+# Tools for *authoring* the lab (learners don't need these).
+# Install with: pip install -r requirements-dev.txt
+jupytext>=1.16
+nbconvert>=7.0
+ruff>=0.6
