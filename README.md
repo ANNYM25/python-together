@@ -14,7 +14,7 @@ A shared lab for **Python, mathematics, machine learning, and fintech** — taug
 This repository is built for two people who will both commit:
 
 - **You** — bachelor's in computer science and machine learning
-- **Annie** — master's in sustainable finance and fintech
+- **Anny** — master's in sustainable finance and fintech
 
 Anyone who can write a little Python can start in `01-python-foundations/` and walk all the way through calculus, algorithms, models, and money.
 
@@ -39,7 +39,7 @@ The five public repos you named were used as a **topic map** (what a complete pa
 Suggested split of ownership (not a wall — both of you can edit anything):
 
 - **You** often lead: algorithms, math-for-ML, models, evaluation.
-- **Annie** often leads: money math, returns and risk, ESG, sustainable-finance case studies.
+- **Anny** often leads: money math, returns and risk, ESG, sustainable-finance case studies.
 
 Keep a living log in `progress/PROGRESS.md`.
 

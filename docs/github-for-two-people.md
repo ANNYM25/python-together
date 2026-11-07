@@ -1,4 +1,4 @@
-# GitHub for two people (you + Annie)
+# GitHub for two people (you + Anny)
 
 The question you asked: *"If I add a collaborator, is the repo visible in both our
 GitHub accounts?"*
@@ -20,7 +20,7 @@ equally owned.
 ```
 github.com/R341CUL/python-together     <- the org owns it
    ├── member: lucifer   (owner)
-   └── member: annie     (owner)
+   └── member: anny     (owner)
 ```
 
 - Both of you see it the same way and push directly.
@@ -30,7 +30,7 @@ github.com/R341CUL/python-together     <- the org owns it
 **Set it up (web):**
 1. github.com → top-right **+** → **New organization** → Free plan.
 2. Name it (e.g. `python-together`).
-3. Invite Annie: Org → **People** → **Invite member** → her username → role **Owner**.
+3. Invite Anny: Org → **People** → **Invite member** → her username → role **Owner**.
 4. Create the repo *inside the org*: **+** → New repository → Owner = the org.
 
 > The "Open in Colab" badges in every notebook point at
@@ -45,16 +45,16 @@ collaborator with push access.
 
 ```
 github.com/lucifer/python-together
-   └── collaborator: annie   (write access)
+   └── collaborator: anny   (write access)
 ```
 
-- Annie can push, open PRs, review — full working access.
+- Anny can push, open PRs, review — full working access.
 - **Her commits still count on her own contribution graph / profile.** 👍
 - But the repo is *listed* under your account, not hers. It shows up for her
   under "Repositories I have access to," not as a repo she owns.
 
 **Add a collaborator (web):** Repo → **Settings** → **Collaborators** →
-**Add people** → Annie's username.
+**Add people** → Anny's username.
 
 ### 3. Fork + pull requests
 
@@ -77,9 +77,9 @@ Set your identity once per machine:
 git config --global user.name  "Lucifer"
 git config --global user.email "anishchatterjee13@gmail.com"
 
-# on Annie's laptop
-git config --global user.name  "Annie"
-git config --global user.email "annie@example.com"   # her GitHub email
+# on Anny's laptop
+git config --global user.name  "Anny"
+git config --global user.email "anny@example.com"   # her GitHub email
 ```
 
 > Use the email that's verified on each person's GitHub account, otherwise the
@@ -102,7 +102,7 @@ git branch -M main
 git push -u origin main
 ```
 
-Annie then clones the same URL:
+Anny then clones the same URL:
 
 ```bash
 git clone https://github.com/R341CUL/python-together.git

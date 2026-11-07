@@ -1,4 +1,4 @@
-# Contributing (you and Annie)
+# Contributing (you and Anny)
 
 This lab has two first-class authors. Treat every lesson as something the other person may teach from.
 
@@ -47,7 +47,7 @@ Write why, not a file list.
 - `add ESG scorecard using dummy holdings`
 - `fix binary search off-by-one on empty list`
 
-## Adding Annie (or you) on GitHub
+## Adding Anny (or you) on GitHub
 
 See **[docs/github-for-two-people.md](docs/github-for-two-people.md)** for the full
 walkthrough (organization vs. collaborator, how credit works, first push). Short

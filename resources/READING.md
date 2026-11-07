@@ -12,7 +12,7 @@ Books worth buying later:
 - *Python Crash Course* — syntax with projects
 - *Python for Data Analysis* — pandas
 - *Hands-On Machine Learning* — sklearn and neural nets
-- *Quantitative Risk Management* or a sustainable-finance text Annie already uses in class — pair each chapter with a file in `09-fintech/`
+- *Quantitative Risk Management* or a sustainable-finance text Anny already uses in class — pair each chapter with a file in `09-fintech/`
 
 Practice:
 

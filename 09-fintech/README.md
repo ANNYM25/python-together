@@ -1,6 +1,6 @@
 # Fintech and sustainable finance
 
-Annie's home track. Every number here is synthetic. No live market data, no client books.
+Anny's home track. Every number here is synthetic. No live market data, no client books.
 
 | Notebook | Topic |
 | --- | --- |
