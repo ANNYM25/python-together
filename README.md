@@ -76,9 +76,14 @@ Do not skip the `🏋️ Your turn` cells. That is where the learning happens.
 ## Working on this together
 
 Two authors, both committing. See
-**[docs/github-for-two-people.md](docs/github-for-two-people.md)** for how to set
-it up as a GitHub organization so you both own it equally, and how commit credit
-works. Contribution rules live in [CONTRIBUTING.md](CONTRIBUTING.md).
+**[docs/github-for-two-people.md](docs/github-for-two-people.md)** for how commit
+credit works and the collaboration workflow. Contribution rules live in
+[CONTRIBUTING.md](CONTRIBUTING.md).
+
+### Maintainers
+
+- **Lucifer** ([@R341CUL](https://github.com/R341CUL)) — computer science & machine learning
+- **Anny** ([@ANNYM25](https://github.com/ANNYM25)) — sustainable finance & fintech
 
 ## What this is not
 
