@@ -1,0 +1,25 @@
+name: gitleaks
+
+# Secret scanning — fails the build if an API key, token, password, or private
+# key is ever committed. This repo should contain ONLY synthetic data and no
+# secrets, so any hit is a bug to fix before merge.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0          # scan full history, not just the latest commit
+      - name: Run gitleaks
+        uses: gitleaks/gitleaks-action@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

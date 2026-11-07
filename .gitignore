@@ -18,5 +18,17 @@ htmlcov/
 .idea/
 .vscode/
 *.log
+
+# Secrets — never commit these (gitleaks also scans for them)
+.env
+.env.local
+*.pem
+*.key
+*.p12
+secrets.*
+credentials*.json
+service-account*.json
+
+# Notebook-generated artifacts
 07-data-science/*.png
-02-intermediate-python/_sample_returns.csv
+*.ipynb_convert*

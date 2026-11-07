@@ -1,0 +1,15 @@
+# gitleaks configuration — extends the built-in rules with a small allowlist.
+# Docs: https://github.com/gitleaks/gitleaks
+title = "python-together gitleaks config"
+
+[extend]
+useDefault = true          # keep all of gitleaks' built-in secret rules
+
+[allowlist]
+description = "Known-safe strings that are not secrets"
+# Public GitHub no-reply commit emails / handles, not credentials. Everything
+# else (including inside notebooks) is still scanned, so a real leaked key fails CI.
+regexes = [
+  '''\d+\+ANNYM25@users\.noreply\.github\.com''',
+  '''anishchatterjee13@gmail\.com''',
+]
