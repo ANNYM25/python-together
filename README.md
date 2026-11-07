@@ -1,6 +1,6 @@
 # Python Together
 
-[![notebooks](https://github.com/R341CUL/python-together/actions/workflows/notebooks.yml/badge.svg)](https://github.com/R341CUL/python-together/actions/workflows/notebooks.yml)
+[![notebooks](https://github.com/ANNYM25/python-together/actions/workflows/notebooks.yml/badge.svg)](https://github.com/ANNYM25/python-together/actions/workflows/notebooks.yml)
 [![Python 3.11+](https://img.shields.io/badge/python-3.11%2B-blue.svg)](https://www.python.org)
 [![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 

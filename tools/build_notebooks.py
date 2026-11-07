@@ -35,7 +35,7 @@ import jupytext
 import nbformat
 
 # --- Edit these two lines if your GitHub org/repo name is different ----------
-GITHUB_ORG = "R341CUL"
+GITHUB_ORG = "ANNYM25"
 GITHUB_REPO = "python-together"
 DEFAULT_BRANCH = "main"
 # -----------------------------------------------------------------------------

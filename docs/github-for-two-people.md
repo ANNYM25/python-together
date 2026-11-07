@@ -18,7 +18,7 @@ accounts. The repo lives in the org, not in either person's account, so it feels
 equally owned.
 
 ```
-github.com/R341CUL/python-together     <- the org owns it
+github.com/ANNYM25/python-together     <- the org owns it
    ├── member: lucifer   (owner)
    └── member: anny     (owner)
 ```
@@ -34,7 +34,7 @@ github.com/R341CUL/python-together     <- the org owns it
 4. Create the repo *inside the org*: **+** → New repository → Owner = the org.
 
 > The "Open in Colab" badges in every notebook point at
-> `R341CUL/python-together`. If you pick a different org or repo name, do
+> `ANNYM25/python-together`. If you pick a different org or repo name, do
 > a find-and-replace of that string across the `.ipynb` files (one line in each
 > notebook's first cell) so the badges open the right place.
 
@@ -95,7 +95,7 @@ git add -A
 git commit -m "Convert foundations to notebooks; add build pipeline"
 
 # 2. point at the GitHub repo you created (org model shown)
-git remote add origin https://github.com/R341CUL/python-together.git
+git remote add origin https://github.com/ANNYM25/python-together.git
 
 # 3. push
 git branch -M main
@@ -105,7 +105,7 @@ git push -u origin main
 Anny then clones the same URL:
 
 ```bash
-git clone https://github.com/R341CUL/python-together.git
+git clone https://github.com/ANNYM25/python-together.git
 ```
 
 ## The everyday loop (both of you)

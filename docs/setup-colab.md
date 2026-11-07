@@ -16,7 +16,7 @@ lesson in Colab.
 
 1. Go to [colab.research.google.com](https://colab.research.google.com).
 2. **File → Open notebook → GitHub** tab.
-3. Paste the repo URL (e.g. `R341CUL/python-together`) and pick the
+3. Paste the repo URL (e.g. `ANNYM25/python-together`) and pick the
    `.ipynb` you want.
 
 ## How to use a notebook
